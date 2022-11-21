@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+
+/* navbar */
+.navbar{
+   background-color: black;
+   padding-right: 10px;
+}
+.container-fluid{
+    background: none;
+}
+.navbar-header{
+
+    background: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand{
+    font-size: large;
+    font-weight: bolder;
+    font-family: cursive;
+}
+/* Home Page */
+.back{
+    height: 100vh;
+    background-image:url(Components/images/login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* login button  */
+.nm{
+    margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btt1{
+    position: absolute;
+    /* margin-top: -50px; */
+    margin-left: 150px;
+    text-transform: uppercase;
+    /* text-decoration: none; */
+    text-align: center;
+    color: greenyellow;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    padding-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.btt1::before,
+.btt1::after,
+.spn::before,
+.spn::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    transition: 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btt1::before{
+    top:-2px;
+    left:-2px;
+    border-top: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
 }
+.spn::before{
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid greenyellow;
+    border-left: 2px solid greenyellow;
+
+}
+.spn::after{
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid greenyellow;
+    border-left: 2px solid greenyellow;
+
+}
+
+.btt1:hover::before,
+.btt1:hover::after,
+.btt1:hover .spn::before,
+.btt1:hover .spn::after {
+    width: calc(180px / 2);
+    height: calc( 50px / 2);
+}
+/* login button end */
+
+/* signup  */
+.back1{
+    height: 100vh;
+    background-image:url(Components/images/snup.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+    
+}
+
+
+.fmm{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 4px 4px 18px black;
+    margin-top: 90px;
+    background-color: rgba(255, 255, 255, .9);
+    font-family:'popins', sans-serif;
+}
+
+.fm{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 4px 4px 18px black;
+    margin-top: 90px;
+    background-color: rgba(255, 255, 255, .9);
+    font-family:'popins', sans-serif;
+}
+.fm .form-group input{
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    padding: 10px 5px ;
+    border: 0;
+    border-bottom: 1px solid #656565;
+    outline: none;
+    transition: all 0.2s;
+}
+.fm .form-group input:focus{
+    border-color: #bababa;
+}
+.fm a{
+text-decoration: underline;
+}
+.imm img{
+    height: 150px;
+    width: 150px;
+
+}
+
+/* User css */
+.dv{
+
+    border: 1px solid rgba(0, 0, 0, 0.045);
+    height: 350px;
+
+}
+
+.dv1{
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 200px;
+
+}
+
+.pd{
+    border: 1px solid rgba(0, 0, 0, .1);
+
+}   
+.pp{
+    font-weight: bolder;
+    font-size: large;
+}
+.box{
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.box1{
+    /* border: 2px solid rgb(213, 197, 197, .3); */
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    
+}
+.pr{
+    font-weight: bolder;
+}
+.h{
+    text-align: center;
+    font-weight: bold;
+}
+
+.price{
+    font-weight: bolder;
+    text-align: center;
+}
+.p{
+    text-align: center;
+}
+ .ig{
+    height: 150px;
+    padding: 10px;
+}
+
+.ig:hover{
+    height: 160px;
+    cursor: pointer;
+
+}
+/* .cdv{
+    border: 1px solid green;
+    
+} */
+
+.crtb{
+    background: none !important;
+    color: #666 !important;
+    border-color: #ddd !important;
+    font-weight: bold !important;
+}
+.crtb:hover{
+    background-color: rgb(62, 195, 82) !important;
+    color: white !important;
+    font-size: 14px;
+    border: none;
+}
+
+/* usernavbar */
+/* c */
